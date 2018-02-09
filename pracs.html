@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Sketches - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/gallerycss.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel+Decorative|Dancing+Script|Pacifico|Satisfy" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<script type="text/javascript" >
+		$(document).ready(function() {
+			$(window).scroll(function() {
+				if($(document).scrollTop() > 5) {
+					$('#menu').addClass('shrink');
+					
+					
+				}
+
+				else {
+					$('#menu').removeClass('shrink');
+				}
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		function validate()
+		{   var emailID = document.myForm.email.value;
+			atpos = emailID.indexOf("@");
+			dotpos = emailID.lastIndexOf(".");
+
+			if( document.myForm.name.value == "" )
+			{
+				alert( "Please provide your name!" );
+				document.myForm.name.focus() ;
+
+				return false;
+			}
+
+			if (atpos < 1 || ( dotpos - atpos < 2 )||document.myForm.email.value=="") 
+			{
+				alert("Please enter correct email ID")
+				document.myForm.email.focus() ;
+				return false;
+			}
+
+
+			if( document.myForm.name.value == "" )
+			{
+				alert( "Please provide your name!" );
+
+				return false;
+			}
+			if( document.myForm.address.value == "" )
+			{
+				alert( "Please provide your address!" );
+				document.myForm.address.focus() ;
+
+				return false;
+			}
+			if( document.myForm.text.value == "" )
+			{
+				alert( "Please give feedback :)  " );
+				document.myForm.text.focus() ;
+
+				return false;
+			}
+			var phoneno = /^\d{10}$/; 
+
+			if(document.myForm.phone.value.match(phoneno))  
+			{  
+				return true;  
+			}  
+			else  
+			{  
+				alert("Not a valid Phone Number");  
+				return false;  
+			}  
+			if( document.myForm.address.value == "" )
+			{
+				alert( "Please provide your address!" );
+				document.myForm.address.focus() ;
+
+				return false;
+			}
+
+
+		}
+	</script>
+</head>
+<body onload="checkCookie()">	
+</script>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		$(window).click(function() {
+			var x=$("menu").offset();
+			if(x.top > 10) {
+
+				$("#logo").css('color', 'black');
+			} 
+		});
+	});
+</script>
+<section>
+	<div id="container">
+		<div id="menu">
+			<div id="logo"><a href="#container">Custom Sketches</a></div>
+			<div id="navbar">
+				<ul>
+					<li><a href="#container">HOME</a></li>
+					<li><a href="#gallery">GALLERY</a></li>
+
+					<li><a href="#contact">CONTACT</a></li>
+					<li id="order-li"><a href="pracs.html" id="order">Practicals</a></li>     
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section >
+	<div class="gallery" id="gallery">
+
+		<div class="row">
+
+			<div class="col-lg-12">
+				<center><h1 class="gallery-header" style="font-family: 'galleryfont'; font-size: 65px;">Gallery</h1></center>
+			</div>
+
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled.jpg" alt=""><div class="text-box"><p>WATER EFFECT<br><span>11.69' x 16.53'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-2.jpg" alt=""><div class="text-box"><p>BABY<br><span>8.27' x 11.69'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-3.jpg" alt=""><div class="text-box"><p>BAJIRAO MASTANI<br><span>8.27' x 11.69'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-4.jpg" alt=""><div class="text-box"><p>REALISTIC EYE<br><span>8.27' x 11.69'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-5.jpg" alt=""><div class="text-box"><p>SMILE<br><span>11.69' x 16.53'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-6.jpg" alt=""><div class="text-box"><p>SHRADDHA KAPOOR<br><span>11.69' x 16.53'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-7.jpg" alt=""><div class="text-box"><p>SHAHID KAPOOR<br><span>8.27' x 11.69'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-8.jpg" alt=""><div class="text-box"><p>VIRAT KOHLI<br><span>11.69' x 16.53'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-9.jpg" alt=""><div class="text-box"><p>LEOPARD<br><span>8.27' x 11.69'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-10.jpg" alt=""><div class="text-box"><p>MOTHER TERESA<br><span>11.69' x 16.53'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-11.jpg" alt=""><div class="text-box"><p>DEEPIKA PADUKONE<br><span>8.27' x 11.69'</span></p></div>
+				</a>
+			</div>
+			<div class="image-wrapper">
+				<a class="thumbnail" href="#">
+					<img class="img-responsive" src="images/sketches/Untitled-12.jpg" alt=""><div class="text-box"><p>JOKER<br><span>11.69' x 16.53'</span></p></div>
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</section>
+<section id="contact" style="position: relative;">
+	<div class="contact">
+
+
+		<div class="contact-wrapper" style="color: white">
+			<span class="contact-text">contact</span>
+			<p class="contact-content">
+				<span class="inner-contact-content">We look forward to seeing you at the gallery.Contact us for</span><br> 
+				<span class="inner-contact-content">further information</span></p>
+
+			</div>
+			<div class="form-wrapper">
+				<form id="contactForm" method="post" action="" name="myForm" onsubmit="return(validate());">
+					<div class="input-column-1">
+						<input type="text" placeholder="Name" name="name" class="column1" style="margin-right: 10px;">
+						<input type="text" placeholder="Email" name="email" class="column1">
+					</div>
+					<input type="text" placeholder="Phone" name="phone" class="phone-field">
+					<input type="text" placeholder="Address" name="address" class="address-field">
+					<input type="text" placeholder="Text" name="text" class="text-field">
+
+					<div class="send-button" style="text-align: center;display: block;position: static;padding-top: 15px;">
+						<input type="submit" name="submit" style="border:none;cursor: pointer;"> Send</submit>
+					</div>
+
+				</form>
+
+			</div>
+
+
+
+
+		</div>  
+	</section>
+
+
+	<section>
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3 style="color: black;font-family: 'logofont';">Custom Sketches</h3>
+
+
+				<p class="footer-company-name">Custom Sketches &copy; 2017</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p style="color: black;"><span><b>21B Baker St., <br>London, England</b></span></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p style="color: black;">+91 8654287426</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@customsketches.com">support@customsketches.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about" style="color: black;">
+					<span style="color: black;">About the company</span>
+					For years all creative types in the local area flocked here, to the biggest art gallery in the region, where every kind of art - be it modern or experimental is both respected and exhibited
+				</p>
+				<p> <!--<a href="edit1.php">Click here to update profile </a>-->
+					<script type="text/javascript"> var x = getCookie("nameofu"); document.write("Logged in as "+x);
+						function getCookie(cname) {
+							var name = cname + "=";
+							var ca = document.cookie.split(';');
+							for(var i = 0; i < ca.length; i++) {
+								var c = ca[i];
+								while (c.charAt(0) == ' ') {
+									c = c.substring(1);
+								}
+								if (c.indexOf(name) == 0) {
+									return c.substring(name.length, c.length);
+								}
+							}
+							return "";
+						} </script>
+
+
+						<style type="text/css">
+							.modal {
+								display: none; /* Hidden by default */
+								position: fixed; /* Stay in place */
+								z-index: 1; /* Sit on top */
+								padding-top: 100px; /* Location of the box */
+								left: 0;
+								top: 0;
+								width: 100%; /* Full width */
+								height: 100%; /* Full height */
+								overflow: auto; /* Enable scroll if needed */
+								background-color: rgb(0,0,0); /* Fallback color */
+								background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+							}
+
+							/* Modal Content */
+							.modal-content {
+								background-color: #fefefe;
+								margin: auto;
+								padding: 20px;
+								border: 1px solid #888;
+								width: 80%;
+							}
+
+							/* The Close Button */
+							.close {
+								color: #aaaaaa;
+								float: right;
+								font-size: 28px;
+								font-weight: bold;
+							}
+
+							.close:hover,
+							.close:focus {
+								color: #000;
+								text-decoration: none;
+								cursor: pointer;
+							}</style>
+
+
+
+							<!-- Trigger/Open The Modal -->
+							<button onclick="window.location.href='edit1.php';" id="myBtn1">Edit Profile</button>
+
+							<!-- The Modal -->
+							<div id="myModal" class="modal">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<p>
+
+
+										<div class="container"> 
+
+
+											<form name='registration' action="register.php" method="post">  
+												<ul style="list-style-type: none;">  
+													<li><label for="username">New Username:</label></li>  
+													<li><input type="text" name="username" placeholder="Kew">
+													</li>  
+													<li><label for="password">Password:</label></li>  
+													<li><input type="password" name="password" size="12" /></li>  
+
+
+													<br>
+													<li>
+														<input type="submit" name="action" value="Register" class="btn-login">
+													</li>  
+												</ul>  
+											</form>
+										</div>   
+									</p>
+								</div>
+
+							</div>
+							
+							<script>
+
+								var modal = document.getElementById('myModal');
+
+
+								var btn = document.getElementById("myBtn");
+
+
+								var span = document.getElementsByClassName("close")[0];
+
+
+								btn.onclick = function() {
+									modal.style.display = "block";
+								}
+
+
+								span.onclick = function() {
+									modal.style.display = "none";
+								}
+
+
+								window.onclick = function(event) {
+									if (event.target == modal) {
+										modal.style.display = "none";
+									}
+								}
+							</script>
+
+
+
+
+
+
+						</p>
+				<!--<p> Logged in as <script> 
+				
+				document.write(getCookie("user")); 
+				</script>
+				<-->
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/custom_sketches"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.twitter.com/custom_sketches"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.youtube.com/Girish Savlesha"><i class="fa fa-youtube"></i></a>
+					<a href="https://www.instagram.com/custom_sketches"><i class="fa fa-instagram"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+	</section>
+
+	
+	<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+
+	<!-- <script type="text/javascript">
+		function checkCookie() {
+			var username = getCookie("nameofu");
+			if (username != "") {
+				alert("Welcome, " + username+" "+getCookie("snameofu"));
+			} else {
+				//username = prompt("Please enter your name:", "");
+				username = "Guest";
+				alert("Welcome, " + username);
+				if (username != "" && username != null) {
+					setCookie("nameofu", username, 365);
+				}
+			}
+		}
+
+		function getCookie(cname) {
+			var name = cname + "=";
+			var ca = document.cookie.split(';');
+			for(var i = 0; i < ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+
+	</script> -->
+
+</body>
+</html>
